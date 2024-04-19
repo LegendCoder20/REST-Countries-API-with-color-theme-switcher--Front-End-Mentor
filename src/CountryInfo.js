@@ -34,13 +34,16 @@ function CountryInfo() {
       <div
         className="main-info-container"
         style={{
-          backgroundColor: isDarkMode ? "black" : "white",
+          backgroundColor: isDarkMode ? "hsl(207, 26%, 17%)" : "white",
           color: isDarkMode ? "#ffffffde" : "black",
         }}
       >
-        <div className="back-button">
+        <div
+          id="back-button"
+          className={isDarkMode ? "back-button-dark" : "back-button-light"}
+        >
           <Link to="/">
-            <button> ← Back </button>
+            <button>← Back</button>
           </Link>
         </div>
 
@@ -99,12 +102,14 @@ function CountryInfo() {
                   <div
                     className="border-countries-names"
                     style={{
-                      backgroundColor: isDarkMode ? "#414040" : "white",
+                      backgroundColor: isDarkMode
+                        ? "hsl(209, 23%, 22%)"
+                        : "white",
                       border: isDarkMode
-                        ? "0.1px solid black"
+                        ? "2px solid hsl(209, 23%, 22%)"
                         : "2px solid hsl(0, 30%, 96%)",
                       boxShadow: isDarkMode
-                        ? "0px 0px 5px 0.5px black"
+                        ? "0px 0px 10px 0.5px black"
                         : "0px 0px 5px 0.5px hsl(0, 5%, 88%)",
                     }}
                   >
@@ -115,12 +120,14 @@ function CountryInfo() {
                     <div
                       className="border-countries-names"
                       style={{
-                        backgroundColor: isDarkMode ? "#414040" : "white",
+                        backgroundColor: isDarkMode
+                          ? "hsl(209, 23%, 22%)"
+                          : "white",
                         border: isDarkMode
-                          ? "0.1px solid black"
+                          ? "2px solid hsl(209, 23%, 22%)"
                           : "2px solid hsl(0, 30%, 96%)",
                         boxShadow: isDarkMode
-                          ? "0px 0px 5px 0.5px black"
+                          ? "0px 0px 10px 0.5px black"
                           : "0px 0px 5px 0.5px hsl(0, 5%, 88%)",
                       }}
                       key={index}
